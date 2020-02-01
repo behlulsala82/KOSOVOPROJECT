@@ -1,0 +1,49 @@
+﻿@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="cart_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Üye Ol</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <form method="post" asp-action="Register">
+                            <h4>Yeni hesap oluşturun.</h4>
+                            <hr />
+                            <div class="text-danger validation-summary-valid" asp-validation-summary="All">
+                                <ul>
+                                    <li style="display:none"></li>
+                                </ul>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="UserName">Kullanıcı Adı</label>
+                                <input asp-for="UserName" class="form-control" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Email" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password">Şifre</label>
+                                <input asp-for="Password" class="form-control" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Password" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="form-control" />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="Input.Email" data-valmsg-replace="true"></span>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Üye Ol" />
+                            <input asp-action="Index" asp-controller="Home" type="submit" class="btn btn-danger" value="İptal" />
+
+                        </form>
+                    </div>
+                </div>
+
+
+                <hr />
+                </div>
+</div>
+</div>
+</div>

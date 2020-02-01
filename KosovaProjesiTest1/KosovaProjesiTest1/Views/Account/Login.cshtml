@@ -1,0 +1,75 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="cart_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2>Giriş Yap</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <section>
+                            <form id="account" method="post">
+                                <h4>Online Yazılım Kursu Giriş Paneli.</h4>
+                                <hr />
+                                <div asp-validation-summary="All" class="text-danger">
+                                    <ul>
+                                        <li style="display:none"></li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="UserName"></label>
+                                    <input asp-for="UserName" class="form-control" />
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Password"></label>
+                                    <input asp-for="Password" class="form-control" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label asp-for="RememberMe">
+                                            <input asp-for="RememberMe" />
+                                            @Html.DisplayNameFor(m => m.RememberMe);
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-action="Login" type="submit" class="btn btn-success" value="Giriş Yap" />
+                                </div>
+                                <div class="form-group">
+
+                                    <p>
+                                        Hesabın yok mu ? Hemen <a href="~/Account/Register">Üye Ol</a>.
+                                    </p>
+                                </div>
+                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MwHCWtWfrNFhMi0pgGFaEjNllZ3FyIaUsXXyZVkZuQ9Cf8iaeR1nRxinV8CPqClFuMsDiZiOwyKJbfd4U_VjC1GT1vb1iL253ZRIuays5pGcjpfnqnEwYxF5zToOYo4CEnMQuHREOGCdJ4dUE0RRdk" /><input name="Input.RememberMe" type="hidden" value="false" />
+                            </form>
+                        </section>
+                    </div>
+                    <div class="col-md-6 col-md-offset-2">
+                        <section>
+                            <h3>Online Kurslarımıza Hoş Geldiniz.</h3>
+                            <hr />
+                            <div>
+                                <h4>
+                                    Professiyonel bir ekip, Muhteşem dizayn edilmiş bir ders sistemi seni bekliyor.
+                                    Hadi içeri gel. !
+                                </h4>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+                <hr />
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+
