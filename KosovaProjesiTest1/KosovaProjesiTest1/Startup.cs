@@ -74,7 +74,7 @@ namespace KosovaProjesiTest1
             {
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures,
-                DefaultRequestCulture = new RequestCulture("sq-AL")
+                DefaultRequestCulture = new RequestCulture("tr-TR")
             });
             app.UseMvc(routes =>
             {

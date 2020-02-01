@@ -12625,11 +12625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\KosovaProjesiTest1\\KosovaProjesiTest1\\KosovaProjesiTest1.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KOSOVOPROJECT\\KosovaProjesiTest1\\KosovaProjesiTest1\\KosovaProjesiTest1.csproj",
       "projectName": "KosovaProjesiTest1",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\KosovaProjesiTest1\\KosovaProjesiTest1\\KosovaProjesiTest1.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KOSOVOPROJECT\\KosovaProjesiTest1\\KosovaProjesiTest1\\KosovaProjesiTest1.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\KosovaProjesiTest1\\KosovaProjesiTest1\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KOSOVOPROJECT\\KosovaProjesiTest1\\KosovaProjesiTest1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
